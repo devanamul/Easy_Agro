@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Easy Agro</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/EasyAgro/fertilizer.css">
+</head>
+<body>
+	<div class="part1" style="width: 100%;">
+		<h8 class="contact">যে কোন তথ্যের জন্য যোগাযোগ করুন   +৮৮০১৯০৬১৪৫৯২২</h8>
+	</div>
+
+	<div class="part2" style="width: 100%;">
+		<div style="font-family: cursive;" class="header item">Easy Agro</div>
+
+		<div style="display: flex; align-items: center; justify-content: center;" class="ui right secondary menu">
+			<a style="color: white;" class="item" href="">Help</a>
+			<a style="color: white;" class="item" href="">Contact</a>
+			<a style="color: white;" class="item" href="">{{user.first_name}}</a>
+			<a style="color: white;" class="item" href="{% url 'Logout' %}">LogOut</a>
+		</div>
+	</div>
+
+	<div class="part3" style="width: 100%;">
+		<label class="porject" for="">{{project.name}}</label>
+		<div class="card">
+			<h4>পরিমাপঃ<br><br>প্রতিবার প্রয়োগের সময় আপনার ফসলের জন্য জন্য {{needed_N}} কেজি নাইট্রোজেন বা ইউরিয়া সার, {{needed_P}} কেজি ফস্ফরাস এবং  {{needed_K}} কেজি পটাসিয়াম প্রয়োজন</h4>
+		</div>
+
+		<div class="card">
+			<h4>প্রথম দিন সার প্রয়োগ করতে হবে, তারপর ৩০-৩৫ দিন পর আবারো একই পরিমান সার প্রয়োগ করতে হবে</h4>
+		</div>
+	</div>
+</body>
+</html>

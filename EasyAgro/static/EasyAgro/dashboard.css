@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.ui.menu > * {
+	color: white !important;
+}
+
+
+.part1 {
+	position: absolute;
+	width: 1512px;
+	height: 50px;
+	top: 0px;
+	background: #006A4E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.part2 {
+	position: absolute;
+	width: 1512px;
+	height: 50px;
+	top: 50px;
+	background: rgba(0, 106, 78, 0.8);
+	opacity: 0.7;
+	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.part3 {
+	position: absolute;
+	width: 1512px;
+	height: 388px;
+	top: 100px;
+	
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 8s ease-in-out infinite;
+  display: flex;
+  flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.slide:nth-child(1) {
+  background-image: url("../EasyAgro/image1.jpg");
+  animation-delay: 5s;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../EasyAgro/image2.jpg");
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../EasyAgro/image3.jpeg");
+  animation-delay: 6s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.part4 {
+	position: absolute;
+	width: 1512px;
+	height: 457px;
+	top: 488px;
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact {
+	position: absolute;
+	width: 400px;
+	height: 15px;
+	font-family: 'Sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.header.item {
+	font-family: cursive;
+	align-items: center; 
+	justify-content: center; 
+	display: flex; 
+	font-size: 1.5em; 
+	color: #FFFFFF;
+	margin: 20px;
+}
+
+.ui.right.secondary.menu{
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.diseaseIdent {
+	width: 300px;
+	height: 45px;
+	background: rgba(0, 106, 78, 0.712);
+	border-radius: 26px;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.781);
+}
+
+.diseaseIdent > a {
+	font-family: 'Sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	color: white;
+}
+
+.startProject {
+	width: 300px;
+	height: 45px;
+	background: rgba(0, 106, 78, 0.712);
+	border-radius: 26px;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.781);
+}
+
+.startProject > a {
+	font-family: 'Sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	color: white;
+}
+
+.projects {
+	width: 276px;
+	height: 39px;
+	left: 0;
+	top: 0;
+	font-family: 'sans-serif;';
+	font-style: italic;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 39px;
+	color: #000000;
+	margin: 20px;
+}
+
+.ui.link.cards{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: flex-start;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 201px;
+	height: 295px;
+	background: rgba(0, 106, 78, 0.5);
+	border-radius: 26px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px;
+}
+
+.card:hover{
+	background: rgba(0, 106, 78, 0.842);
+}

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.part1 {
+	position: absolute;
+	width: 1512px;
+	height: 50px;
+	top: 0px;
+	background: #006A4E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.part2 {
+	position: absolute;
+	width: 1512px;
+	height: 50px;
+	top: 50px;
+	background: rgba(0, 106, 78, 0.8);
+	opacity: 0.7;
+	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.part3 {
+	position: absolute;
+	width: 1512px;
+	height: 600px;
+	top: 100px;
+	background-size: cover;
+	display: flex;
+	/*flex-wrap: nowrap;*/
+	justify-content: space-around;
+	align-items: center;
+	/*background-image: url("../EasyAgro/image3.jpeg");*/
+
+}
+
+
+.contact {
+	position: absolute;
+	width: 400px;
+	height: 15px;
+	font-family: 'Sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.header.item {
+	font-family: 'Fantasy';
+	align-items: center; 
+	justify-content: center; 
+	display: flex; 
+	font-size: 1.5em; 
+	color: #FFFFFF;
+	margin: 20px;
+}
+
+.ui.right.secondary.menu{
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.upload {
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.644);
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	height: 90%;
+	width: 48%;
+	background-color: rgba(16, 121, 16, 0.418);
+	margin: 10 px;
+	border-radius: 15px;
+}
+
+.treatment {
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.644);
+	border-left: 1px solid rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: space-around;
+	height: 90%;
+	width: 48%;
+	background-color: rgba(16, 121, 16, 0.418);
+	margin: 10 px;
+	border-radius: 15px;
+}
+
+.treatment > h3 {
+	/*width: 90%;
+	height: 80%px;*/
+
+	font-family: 'Sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 44px;
+	text-align: center;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
